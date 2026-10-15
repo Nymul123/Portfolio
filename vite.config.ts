@@ -1,10 +1,11 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Portfolio/', // GitHub repository-r naam anushare base path jog kora hoyeche
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
