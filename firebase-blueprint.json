@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "Portfolio": {
+      "title": "Portfolio",
+      "description": "Global portfolio entity containing profile, education, skills, projects, achievements, and research records.",
+      "type": "object",
+      "properties": {
+        "profile": {
+          "type": "object",
+          "description": "Owner profile info, bio, avatar, and social links"
+        },
+        "education": {
+          "type": "array",
+          "description": "Array of education milestones"
+        },
+        "skills": {
+          "type": "array",
+          "description": "Array of technical skill items"
+        },
+        "projects": {
+          "type": "array",
+          "description": "Array of engineering projects"
+        },
+        "achievements": {
+          "type": "array",
+          "description": "Array of verified achievements and certificates"
+        },
+        "research": {
+          "type": "array",
+          "description": "Array of research papers and publications"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Last updated timestamp ISO string"
+        }
+      },
+      "required": ["profile", "education", "skills", "projects", "achievements", "research"]
+    }
+  },
+  "firestore": {
+    "/portfolio/{portfolioId}": {
+      "schema": "Portfolio",
+      "description": "Global portfolio document accessible across all devices and browsers"
+    }
+  }
+}

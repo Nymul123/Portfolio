@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "name": "Nymul Hossain",
+    "displayTitle": "Computer Science Engineer & Software Developer",
+    "location": "Dhaka, Bangladesh",
+    "email": "nymul.hossain.dev@gmail.com",
+    "phone": "+880 1712-345678",
+    "whatsapp": "+8801712345678",
+    "avatar": null,
+    "bio": "Computer Science & Engineering graduate specializing in software architecture, web applications, and embedded engineering. Driven by clean code, system performance, and algorithmic problem-solving.",
+    "heroRoles": [
+      "Computer Science Engineer",
+      "Software Developer",
+      "Full-Stack Engineer"
+    ],
+    "socials": {
+      "github": "https://github.com/nymul-hossain",
+      "linkedin": "https://linkedin.com/in/nymul-hossain",
+      "email": "mailto:nymul.hossain.dev@gmail.com",
+      "facebook": "https://facebook.com/nymul.hossain"
+    },
+    "metrics": []
+  },
+  "education": [],
+  "skills": [],
+  "projects": [],
+  "achievements": [],
+  "research": [],
+  "resume": {
+    "summary": "Computer Science Engineer",
+    "experience": []
+  }
+}

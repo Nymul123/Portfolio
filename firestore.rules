@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Validate document ID path variable
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 64 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Portfolio documents: Public read across all devices and browsers worldwide
+    // Valid write operations allowed for portfolio management
+    match /portfolio/{portfolioId} {
+      allow read: if isValidId(portfolioId);
+      allow write: if isValidId(portfolioId);
+    }
+
+    // Connection test document
+    match /test/{docId} {
+      allow read, write: if isValidId(docId);
+    }
+  }
+}
